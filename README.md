@@ -30,12 +30,10 @@ mvn spring-boot:run
 Service will start on port 8080.
 Test the shuffle API with the following details:
 
-    POST URL: http://localhost:8080/api/shuffle
-    Request Body:
+  curl -X POST http://localhost:8080/api/shuffle \
+-H "Content-Type: application/json" \
+-d '{"number": 500}'
 
-        {
-          "number": 2
-        }
 
 2.2 Run ServiceLog
 
